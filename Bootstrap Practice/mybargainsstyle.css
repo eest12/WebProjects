@@ -1,0 +1,62 @@
+#header {
+    border: 1px solid black;
+    position: fixed;
+    width: 99%;
+    background-color: white;
+}
+
+#menu {
+    border: 1px solid black;
+    padding: 10px 0px;
+}
+
+#ad1 {
+    float: left;
+    margin-top: 130px;
+    background-color: yellow;
+    width: 64%;
+    height: 200px;
+}
+
+#ad2 {
+    float: right;
+    margin-top: 130px;
+    background-color: yellow;
+    width: 33%;
+    height: 200px;
+}
+
+#left-col {
+    float: left;
+    width: 64%;
+}
+
+#right-col {
+    float: right;
+    width: 33%;
+}
+
+.col-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+
+.deal {
+    border: 1px solid black;
+    padding: 5px 5px 10px;
+    margin: 10px 0px;
+}
+
+.deal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#footer {
+    clear: both;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
