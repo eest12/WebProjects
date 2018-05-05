@@ -26,30 +26,30 @@ public class AddFile extends HttpServlet {
 		try {
 			// url, username, and password declarations removed for security
 
-      c = DriverManager.getConnection(url, username, password);
-      if (request.getParameter("parentID") == null || request.getParameter("parentID").trim().equals("")) {
-          String sql = "insert into files (name, is_folder, owner_id) values (?, true, 1);";
-        PreparedStatement pstmt = c.prepareStatement(sql);
-        pstmt.setString(1, request.getParameter("name"));
-        pstmt.executeUpdate();
-      } else {
-          String sql = "insert into files (name, is_folder, parent_id, owner_id) values (?, true, ?, 1);";
-          PreparedStatement pstmt = c.prepareStatement(sql);
-          pstmt.setString(1, request.getParameter("name"));
-          pstmt.setString(2, request.getParameter("parentID"));
-          pstmt.executeUpdate();
-      }
+            c = DriverManager.getConnection(url, username, password);
+            if (request.getParameter("parentID") == null || request.getParameter("parentID").trim().equals("")) {
+	            	String sql = "insert into files (name, is_folder, owner_id) values (?, true, 1);";
+	        		PreparedStatement pstmt = c.prepareStatement(sql);
+	            pstmt.setString(1, request.getParameter("name"));
+	            pstmt.executeUpdate();
+            } else {
+            		String sql = "insert into files (name, is_folder, parent_id, owner_id) values (?, true, ?, 1);";
+            		PreparedStatement pstmt = c.prepareStatement(sql);
+                pstmt.setString(1, request.getParameter("name"));
+                pstmt.setString(2, request.getParameter("parentID"));
+                pstmt.executeUpdate();
+            }
 			c.close();
 		} catch (SQLException e) {
 			throw new ServletException(e);
 		} finally {
 			try {
-            if (c != null) {
-                c.close();
+                if (c != null) {
+                		c.close();
+                }
+            } catch (SQLException e) {
+                throw new ServletException(e);
             }
-        } catch (SQLException e) {
-            throw new ServletException(e);
-        }
 		}
 		
 		response.sendRedirect("FileManager?id=" + request.getParameter("parentID") + "&name=" + request.getParameter("parentName"));
@@ -60,3 +60,4 @@ public class AddFile extends HttpServlet {
 	}
 
 }
+
