@@ -1,0 +1,119 @@
+body {
+	font-family: sans-serif;
+	background-color: #d5dbbb;
+	color: #3b453d;
+}
+
+header {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+#banner {
+	height: 130px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#title {
+	float: left;
+	top: 20px;
+	left: 140px;
+	position: absolute;
+	font-size: 40px;
+	color: white;
+}
+
+#log {
+	float: right;
+	top: 100px;
+	right: 130px;
+	position: absolute;
+	color: white;
+}
+
+#content {
+	clear: both;
+	padding: 5px 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	min-height: 420px;
+	width: 80%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #a8c4a3;
+}
+
+th {
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	background-color: #a8c4a3;
+	padding: 3px;
+}
+
+td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	padding: 3px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.highlight {
+	background-color: #deeddc;
+}
+
+a {
+	text-decoration: none;
+	color: #17b315;
+}
+
+.long-input {
+	width: 350px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.short-input {
+	width: 80px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#id {
+	width: 5%;
+}
+
+#type {
+	width: 10%;
+}
+
+#name {
+	width: 40%;
+}
+
+#info {
+	width: 40%;
+}
+
+#avail {
+	width: 5%;
+}
+
+#oper {
+	width: 5%;
+}
